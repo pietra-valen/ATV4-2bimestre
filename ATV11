@@ -1,0 +1,48 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro popA 
+		inteiro popB
+		real taxaA
+		real taxaB
+		inteiro anos = 0
+		inteiro crescimentoA
+		inteiro crescimentoB
+
+		escreva("Informe o número de habitantes da população A: ")
+		leia(popA)
+
+		enquanto(popA <= 0){
+			escreva("Valor inválido! Tente outro valor: ")
+			leia(popA)
+		}
+
+		escreva("Informe o número de habitantes da população B: ")
+		leia(popB)
+
+		enquanto(popB <= 0){
+			escreva("Valor inválido! Tente outro valor: ")
+			leia(popB)
+		}
+
+		escreva("Me informe a primeira taxa de crescimento: ")
+		leia(taxaA)
+
+		escreva("Me informe a segunda taxa de crescimento: ")
+		leia(taxaB)
+
+		enquanto (popA < popB){
+			
+            crescimentoA = (popA * taxaA)/100
+            crescimentoB = (popB * taxaB)/100
+
+            popA = popA + crescimentoA
+            popB = popB + crescimentoB
+
+            anos++
+        }
+        escreva("Demorará ", anos, " anos para a população A ter uma população igual ou maior que a população B")
+	}
+}
