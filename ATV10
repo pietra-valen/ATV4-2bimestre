@@ -1,0 +1,24 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro popA = 80000
+		inteiro popB = 200000
+		inteiro taxaA
+		inteiro taxaB
+		inteiro anos = 0
+
+		enquanto (popA < popB){
+			
+            taxaA = (popA * 3) / 100
+            taxaB = (popB * 15) / 1000
+
+            popA = popA + taxaA
+            popB = popB + taxaB
+
+            anos++
+        }
+        escreva("Demorá ", anos, " anos para a população A ter uma população igual ou maior que a população B")
+	}
+}
