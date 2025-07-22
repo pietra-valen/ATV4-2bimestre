@@ -1,0 +1,31 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro n1, n2
+		inteiro maior, menor
+	
+		escreva("Infomre um número: ")
+		leia(n1)
+
+		escreva("Informe o segundo número: ")
+		leia(n2)
+
+		se(n1>n2){
+			maior = n1
+			menor = n2
+		}
+		senao{
+			menor = n1
+			maior = n2
+		}
+
+		escreva("\nNúmeros entre ", menor, " e ", maior, ":\n")
+
+		para(inteiro i = menor+1; i < maior; i++){
+		escreva(i, "\n")
+		}
+		
+	}
+}
