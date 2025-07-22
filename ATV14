@@ -1,0 +1,21 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		
+		inteiro tabuada
+
+		escreva("Informe o número que quer saber a tabuada: ")
+		leia(tabuada)
+
+		enquanto(tabuada < 1 ou tabuada > 10){
+			escreva("Valor invalido! Tente outro numero: ")
+			leia(tabuada)
+		}
+		
+		para(inteiro i=1; i <= 10; i++){
+			escreva(i , " x ", tabuada, " = ", tabuada * i ,"\n")
+	}
+}
+}
