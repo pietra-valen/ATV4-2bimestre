@@ -1,0 +1,20 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		escreva("Me informe um número para eu te informar o fatorial dele: ")
+		inteiro numero
+		leia(numero)
+
+		inteiro fatorial = 1
+		para(inteiro i=1; i <= numero; i++){
+			
+			fatorial = fatorial*i
+		
+		}
+		escreva("O fatorial de ", numero, ", é ", fatorial)
+	
+	}
+	
+}
