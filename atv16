@@ -1,0 +1,23 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro num=0
+		inteiro par=0
+		inteiro impar=0
+
+		enquanto(num < 10){
+			escreva("Digite um número: ")
+			leia(num)
+
+			se(num%2 == 0){
+				par++
+			}
+			senao{
+				impar++
+			}
+		}
+		escreva("São ", par, " número(s) par(es) e ", impar," número(s) impar(es).")
+	}
+}
