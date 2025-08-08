@@ -1,0 +1,52 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro maior
+		inteiro menor
+		inteiro soma
+ = 0
+		inteiro N, num
+
+		escreva("Me informe o número de elementos do seu conjunto: ")
+		leia(N)
+
+		escreva("Me informe o primeiro número: ")
+		leia(num)
+
+		enquanto(num < 0 ou num > 100){
+			escreva("Número inválido, informe outro: ")
+			leia(num)
+		}
+			
+		maior = num
+		menor = num
+		soma = num
+
+		para(inteiro i=1; i < N; i++){
+
+		escreva("Informe outro número: ")
+		leia(num)
+
+		enquanto(num < 0 ou num > 100){
+			escreva("Número inválido, informe outro: ")
+			leia(num)
+		}
+
+		se(num > maior){
+			maior = num
+		}
+		se(num < menor){
+			menor = num
+		}
+
+		soma += num
+		
+		}
+
+		escreva("\nO maior número é: ", maior, "\n")
+		escreva("O menor número é: ", menor)
+		escreva("\nA soma é: ", soma)
+	}
+}
