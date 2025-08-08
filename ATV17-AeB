@@ -1,0 +1,42 @@
+programa
+{
+	
+	funcao inicio()
+	{
+	//A
+		inteiro num1 = 0
+		inteiro num2 = 1
+		
+
+		escreva("A sequência é: \n")
+
+		inteiro atual = 0
+		enquanto(atual <= 500){
+
+			atual = num1 + num2
+
+			escreva(atual, "\n")
+
+			num2=num1
+			num1=atual
+		}
+		//B
+
+		inteiro parametro
+		escreva("Digite um número para gerar a sequência até ser maior que ele: ")
+		leia(parametro)
+
+		atual = 0
+		num1 = 0
+		num2 = 1
+		
+		enquanto(atual <= parametro){
+		
+		atual = num1 + num2 		
+			
+		escreva(atual, "\n")
+
+		num2 = num1		
+		num1 = atual 
+	}
+}
